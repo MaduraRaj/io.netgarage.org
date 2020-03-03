@@ -1,0 +1,28 @@
+level1@io.netgarage.org
+password: level1
+ls
+cat README
+cd /levels
+ls
+ls -las level01
+gdb level01
+(gdb) set disassembly-flavor intel
+(gdb) info functions
+(gdb) start
+(gdb) disass main
+(gdb) x/s "0x8049128"
+(gdb) p 0x8049128
+(gdb) x/s "0x804810f"
+(gdb) p 0x804810f
+(gdb) x/s "0x10f"
+(gdb) p 0x10f     -----> $5 = 271 (3 digits)
+(gdb) exit
+level1@io:/levels$ ./level01
+	password - 271
+sh-4.3$ whoami
+sh-4.3$ cd /home/
+sh-4.3$ ls
+sh-4.3$ cd level2
+sh-4.3$ ls
+sh-4.3$ ls -al
+sh-4.3$ cat .pass 	------> XNWFtWKWHhaaXoKI
